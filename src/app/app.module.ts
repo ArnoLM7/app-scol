@@ -29,7 +29,7 @@ import { FormEtudiantComponent } from './forms/form-etudiant/form-etudiant.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

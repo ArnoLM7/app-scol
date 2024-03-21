@@ -1,5 +1,26 @@
+<style> 
+
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    form{
+        margin-bottom: 40px; 
+    }
+
+    .formInput{
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 400px;
+        height: 30px;
+    }
+    
+</style>
 <h1> Formulaire spécialité</h1>
+<col>
 <form (ngSubmit)="sauvegarder()">
-    <input type="text" class="form" placeholder="Libelle" [(ngModel)]="specialite.libelle" name="libelle">
-    <input type="text" class="form" placeholder="IdSpec" [(ngModel)]="specialite.idspec" name="idspec">
+    <input type="text" class="formInput" placeholder="Libelle" [(ngModel)]="specialite.libelle" name="libelle"><br>
+    <input type="text" class="formInput" placeholder="IdSpec" [(ngModel)]="specialite.idspec" name="idspec"><br>
+    <input type="button" value="Envoyer">
 </form>

@@ -1,12 +1,32 @@
+<style> 
+
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    form{
+        margin-bottom: 40px; 
+    }
+
+    .formInput{
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 400px;
+        height: 30px;
+    }
+    
+</style>
 <h1> Formulaire Etudiant</h1>
 <form (ngSubmit)="sauvegarder()">
-    <input type="text" class="form" placeholder="Nom" [(ngModel)]="etudiant.nom" name="nom">
-    <input type="text" class="form" placeholder="Prenom" [(ngModel)]="etudiant.prenom" name="prenom">
-    <input type="text" class="form" placeholder="Rue" [(ngModel)]="etudiant.rue" name="rue">
-    <input type="text" class="form" placeholder="CP" [(ngModel)]="etudiant.cp" name="cp">
-    <input type="text" class="form" placeholder="ville" [(ngModel)]="etudiant.ville" name="ville">
-    <input type="text" class="form" placeholder="courriel" [(ngModel)]="etudiant.courriel" name="courriel">
-    <input type="text" class="form" placeholder="genre" [(ngModel)]="etudiant.genre" name="genre">
-    <input type="text" class="form" placeholder="age" [(ngModel)]="etudiant.age" name="age">
-    <input type="text" class="form" placeholder="ID" [(ngModel)]="etudiant.IdCand" name="ID">   
+    <input type="text" class="formInput" placeholder="nom" [(ngModel)]="etudiant.nom" name="nom"><br>
+    <input type="text" class="formInput" placeholder="prenom" [(ngModel)]="etudiant.prenom" name="prenom"><br>
+    <input type="text" class="formInput" placeholder="rue" [(ngModel)]="etudiant.rue" name="rue"><br>
+    <input type="text" class="formInput" placeholder="CP" [(ngModel)]="etudiant.cp" name="CP"><br>
+    <input type="text" class="formInput" placeholder="ville" [(ngModel)]="etudiant.ville" name="ville"><br>
+    <input type="text" class="formInput" placeholder="courriel" [(ngModel)]="etudiant.courriel" name="courriel"><br>
+    <input type="text" class="formInput" placeholder="genre" [(ngModel)]="etudiant.genre" name="genre"><br>
+    <input type="text" class="formInput" placeholder="age" [(ngModel)]="etudiant.age" name="age"><br>
+    <input type="text" class="formInput" placeholder="ID" [(ngModel)]="etudiant.IdCand" name="IdCand"><br>
+    <button type="submit">Envoyer</button>
 </form>

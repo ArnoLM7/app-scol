@@ -1,0 +1,14 @@
+<table>
+    <th colspan="8" class="title">Spécialités</th>
+    <tr>
+        <td colspan="8"><img src="../../../assets/img/YBBNG5EIFVBVZLKUVFVERQIW7Y.jpg" id="specialites"></td>
+    </tr>
+    <tr>
+        <th>Libellé</th>
+        <th>Id</th>
+    </tr>
+    <tr *ngFor="let specialite of specialites">
+        <td> {{ specialite._libelle }}</td>
+        <td> {{ specialite._idSpec }}</td>
+    </tr>
+</table>

@@ -1,0 +1,26 @@
+<table>
+    <th colspan="8" class="title">Étudiants</th>
+    <tr>
+        <td colspan="8"><img src="../../../assets/img/YBBNG5EIFVBVZLKUVFVERQIW7Y.jpg" id="etudiants"></td>
+    </tr>
+    <tr>
+        <th>Noms</th>
+        <th>Prénoms</th>
+        <th>Rue</th>
+        <th>CP</th>
+        <th>Ville</th>
+        <th>Courriel</th>
+        <th>Age</th>
+        <th>Id</th>
+    </tr>
+    <tr *ngFor="let etudiant of etudiants">
+        <td> {{ etudiant._nom }}</td>
+        <td> {{ etudiant._prenoms }}</td>
+        <td> {{ etudiant._rue }}</td>
+        <td> {{ etudiant._cp }}</td>
+        <td> {{ etudiant._ville }}</td>
+        <td> {{ etudiant._courriel }}</td>
+        <td> {{ etudiant._age }}</td>
+        <td> {{ etudiant._idCand }}</td>
+    </tr>
+</table>

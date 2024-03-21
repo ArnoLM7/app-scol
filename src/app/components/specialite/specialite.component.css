@@ -1,0 +1,45 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#specialites{
+    width: 50em;
+}
+
+.droite{
+    position: relative;
+    left: 60em;
+    bottom: 775px;
+}
+
+table, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 13px;
+}
+
+table{
+    transform: translateX(57%);
+}
+
+td, th{
+    padding: 5px !important;
+}
+
+th{
+    background-color: rgb(195, 255, 252);
+}
+
+.title{
+    font-size: 3em;
+}

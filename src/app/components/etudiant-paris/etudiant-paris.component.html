@@ -1,0 +1,28 @@
+<table>
+    <th colspan="8" class="title">Étudiants dans Paris</th>
+    <tr>
+        <td colspan="8"><img src="../../../assets/img/YBBNG5EIFVBVZLKUVFVERQIW7Y.jpg" id="etudiants"></td>
+    </tr>
+    <tr>
+        <th>Noms</th>
+        <th>Prénoms</th>
+        <th>Rue</th>
+        <th>CP</th>
+        <th>Ville</th>
+        <th>Courriel</th>
+        <th>Age</th>
+        <th>Id</th>
+    </tr>
+    <tr *ngFor="let etudiant of etudiants">
+        <td *ngIf="etudiant._ville == 'Paris'"> {{ etudiant._nom }}</td>
+        <td *ngIf="etudiant._ville == 'Paris'"> {{ etudiant._prenoms }}</td>
+        <td *ngIf="etudiant._ville == 'Paris'"> {{ etudiant._rue }}</td>
+        <td *ngIf="etudiant._ville == 'Paris'" > {{ etudiant._cp }}</td>
+        <td *ngIf="etudiant._ville == 'Paris'"> {{ etudiant._ville }}</td>
+        <td *ngIf="etudiant._ville == 'Paris'"> {{ etudiant._courriel }}</td>
+        <td *ngIf="etudiant._ville == 'Paris'"> {{ etudiant._age }}</td>
+        <td *ngIf="etudiant._ville == 'Paris'"> {{ etudiant._idCand }}</td>
+    </tr>
+</table>
+
+<!-- *ngFor="let etudiant of etudiants"  *ngIf="Paris" -->

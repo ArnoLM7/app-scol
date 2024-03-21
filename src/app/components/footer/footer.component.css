@@ -1,0 +1,20 @@
+footer{
+    position: relative;
+    display: flex;
+    padding: 15px;
+    background-color: rgb(32, 39, 54);
+    color: white;
+    justify-content: space-around;
+    bottom:0 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footerText{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

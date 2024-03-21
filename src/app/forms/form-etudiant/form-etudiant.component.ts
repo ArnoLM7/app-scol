@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './form-etudiant.component.html',
   styles: ``
 })
-export class FormEtudiantComponent {
 
+export class FormEtudiantComponent {
+  etudiant: any = {};
+  sauvegarder() {
+    localStorage.setItem('etudiant', JSON.stringify(this.etudiant));
+  }
 }

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class FormSpecialiteComponent {
-
+  specialite: any = {};
+  sauvegarder(){
+    localStorage.setItem('specialite', JSON.stringify(this.specialite));
+  }
 }
